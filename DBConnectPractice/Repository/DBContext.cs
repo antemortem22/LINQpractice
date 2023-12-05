@@ -228,15 +228,6 @@ namespace DBConnectPractice.Repository
 
                 });
 
-
-
-
-
-
-
-
-
-
                 base.OnModelCreating(modelBuilder);
 
             }
