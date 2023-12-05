@@ -22,7 +22,7 @@ namespace DBConnectPractice.Repository
             public DbSet<Actuaciones> Actuaciones { get; set; }
             public DbSet<Actores> Actores { get; set; }
             public DbSet<PeliculasGeneros> PeliculasGeneros { get; set; }
-            public DbSet<Productora> Productora { get; set; }
+            public DbSet<Productoras> Productoras { get; set; }
             public DbSet<Rankings> Rankings { get; set; }
 
 
@@ -182,11 +182,11 @@ namespace DBConnectPractice.Repository
                 });
 
                 // Config Entity to the table "Productora"
-                modelBuilder.Entity<Productora>(entity =>
+                modelBuilder.Entity<Productoras>(entity =>
                 {
-                    entity.ToTable("Productora");
+                    entity.ToTable("Productoras");
 
-                    modelBuilder.Entity<Productora>().HasKey(pr => new
+                    modelBuilder.Entity<Productoras>().HasKey(pr => new
                     {
                         pr.IdProductora,
                         pr.Nombre,
